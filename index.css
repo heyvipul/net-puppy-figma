@@ -144,6 +144,72 @@ body{
     cursor: pointer;
 }
 
+.ranking-part{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: #F8F5F0;
+    flex-wrap: wrap;
+}
+.ranking-part > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 5px;
+    padding: 20px;
+    aspect-ratio: 1/1;
+    box-shadow: 0px 5px 20px 0px #0000001a;
+    flex-shrink: 0;
+}
+.ranking-part #div-hover{
+    transition: all 0.2s;
+}
+.ranking-part #div-hover:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.ranking-part > div img{
+    height: 50px;
+}
+.ranking-part > div :is(p, h3, h2){
+    margin: 0;
+    font-family: cursive;
+}
+.ranking-part > div h3{
+    white-space: nowrap;
+    font-size: larger;
+    color: rgb(167,0,41);
+}
+.ranking-part > div:first-child{
+    border: 2px solid rgb(167,0,41);
+    flex: 1.5;
+    gap: 10px;
+    background-color: white;
+}
+.ranking-part > div:nth-child(2){
+    flex: 0;
+    box-shadow: none
+}
+.ranking-part > div:nth-child(2) img{
+    rotate: -90deg;
+}
+.ranking-part > div:nth-child(2) ~ div{
+    background-color: rgb(167,0,41);
+    color: white;
+}
+.ranking-part > div:nth-child(2) ~ div p{
+    font-size: 14px;
+}
+.ranking-part > div:nth-child(2) ~ div h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
 .parent-part{
     display: flex;
     padding: 50px;
