@@ -274,10 +274,101 @@ body{
     border-bottom-left-radius: 50px;
 }
 
+.card-comp{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    transition: all .5s;
+}
+.card-comp > div{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(65, 64, 64, 0.439);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.card-comp > div :is(h2, p){
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.card-comp > div h2{
+    font-size: 1.3rem;
+}
+.card-comp > div p{
+    opacity: .8;
+    margin-top: 20px;
+    max-width: 25ch;
+    font-size: 1rem;
+}
+.card-comp:hover{
+    background-size: 120% 120%;
+}
 
 
+.activities-part{
+    display: flex;
+    padding: 50px;
+    gap: 30px;
+}
 
-
+.activities-part > div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+}
+.activities-part > div > article > p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+.activities-part > div > article > p:first-child{
+    font-style: italic;
+}
+.activities-part > div > article > p:last-child{
+    color: #60BDBB;
+    margin-top: 20px;
+}
+.activities-part > div:first-child button
+{
+    border-radius: 50px;
+    height: 50px;
+    align-self: flex-start;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border: 2px solid #DBC79F;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #DBC79F;
+    transition: box-shadow .5s;
+}
+.activities-part > div:nth-child(2){
+    flex: 0;
+    display: flex;
+    justify-content: center;
+}
+.activities-part > div:nth-child(2) img{
+    height: 80px;
+    width: 80px;
+}
+.activities-part > div:first-child button:hover{
+    box-shadow: 0px 5px 20px 0px #0000001a;
+    background-color: #DBC79F ;
+    color: black;
+    
+}
 
 
 
